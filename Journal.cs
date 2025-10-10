@@ -38,4 +38,16 @@ class Journal
   {
     return Attachment;
   }
+
+  // Info method
+
+  public string Info()
+  {
+    return $"Patient: {GetPatientName}. \nTitel: {GetTitel}. \nDate: {GetDate}. \nDescription: {GetDescription}. \nAttatchment: {GetAttatchment}";
+  }
+
+  public string ToSaveString()
+  {
+    return $"{GetPatientName},{GetTitel},{GetDate},{GetDescription},{GetAttatchment}";
+  }
 }
