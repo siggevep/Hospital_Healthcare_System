@@ -18,7 +18,7 @@ if (active_user == false)
         string menu1 = Console.Readline();
 
         // ifall log in väljs.
-        if (menu1 == "1")
+        if (menu1 == "1") 
         {
             Console.WriteLine("Email:");
             string name = Console.Readline();
@@ -27,7 +27,7 @@ if (active_user == false)
             string passwrod = Console.Readline();
 
             //lägga till log in 
-
+            // måste fixa så att du kollar om ditt konto fins
         }
 
         //ifall create user väljs
@@ -40,7 +40,7 @@ if (active_user == false)
             string passwrod = Console.Readline();
 
             //lägga till create
-
+           // måste fixa så att din inloggning sparas 
         }
 
         // ifall quit väljs
