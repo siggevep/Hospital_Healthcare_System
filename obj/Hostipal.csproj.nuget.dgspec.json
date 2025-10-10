@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Fatimalmurtadha\\repos\\Hospital_Healthcare_System\\Hostipal.csproj": {}
+    "C:\\Users\\sigge\\Hostipal\\Hostipal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Fatimalmurtadha\\repos\\Hospital_Healthcare_System\\Hostipal.csproj": {
+    "C:\\Users\\sigge\\Hostipal\\Hostipal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fatimalmurtadha\\repos\\Hospital_Healthcare_System\\Hostipal.csproj",
+        "projectUniqueName": "C:\\Users\\sigge\\Hostipal\\Hostipal.csproj",
         "projectName": "Hostipal",
-        "projectPath": "C:\\Users\\Fatimalmurtadha\\repos\\Hospital_Healthcare_System\\Hostipal.csproj",
-        "packagesPath": "C:\\Users\\Fatimalmurtadha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fatimalmurtadha\\repos\\Hospital_Healthcare_System\\obj\\",
+        "projectPath": "C:\\Users\\sigge\\Hostipal\\Hostipal.csproj",
+        "packagesPath": "C:\\Users\\sigge\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sigge\\Hostipal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Fatimalmurtadha\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\sigge\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

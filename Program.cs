@@ -41,6 +41,10 @@ while (running)
 
 
             }
+            if(active_user!.IsRole(Role.Local_Admin))
+            {
+                Console.WriteLine("hello Main admin");
+            }
             //lägga till log in 
             // måste fixa så att du kollar om ditt konto fins
         }
