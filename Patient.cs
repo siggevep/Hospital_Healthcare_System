@@ -1,19 +1,32 @@
 namespace App;
 
-public class Patient
+public class Patient : IUser
 {
-    public string Email;
-    public string Password; 
+    public string Username;
+   string Password; 
     
 
-    public Patient(string email, string password)
+    public Patient(string username, string password)
     {
-        Email = email;
+        Username = username;
         Password = password;
     }
 
     public bool CheckPassword(string password)
     {
-        return Password == password;
+         return username == Username && password == Password;
+    }
+
+
+public bool IsRole(Role role)
+    {
+        return Role.Patient == role;
+        
+    }
+    public Role GetRole()
+    {
+        return Role.Patient;
+
+
     }
 }
