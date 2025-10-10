@@ -1,2 +1,19 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace App;
+
+interface IUser
+{
+    public bool TryLogin(string username, string password);
+
+}
+
+enum Role
+{
+    None,
+    User,
+    Patient,
+    Main_Admin,
+    Local_Admin,
+
+
+
+}
