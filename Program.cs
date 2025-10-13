@@ -49,20 +49,5 @@ static void Give_Admin_permission()
 
         }
 
-
-
-<<<<<<< HEAD
-    Console.WriteLine("Write one of theese names to give them admin");
-
-=======
-    }
-    Console.WriteLine("Write one of these names to give them admin role");
-
-    string input = Console.ReadLine();
-
-    
->>>>>>> 1736c3d (Lägger till cases)
-    
-
-
 }
+
