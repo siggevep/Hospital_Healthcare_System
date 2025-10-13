@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("admin_meny")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+80bc001b97444501de54678f103f4fc5441de9ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("admin_meny")]
 [assembly: System.Reflection.AssemblyTitleAttribute("admin_meny")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

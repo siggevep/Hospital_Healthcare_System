@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "9bCNVLsMgyoxIy2tbcczzdgQShYikWLx/Vo/7luRM9agzBIZFDVm6bAYIAHuhPUsSC/Oa8p6QblMi1j1iOJfNQ==",
+  "dgSpecHash": "k6zv8mfZ5Mo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\sigge.voneggerspatr\\admin_meny\\admin_meny.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/lukaseriksson/GitHub/Hospital_Healthcare_System/admin_meny.csproj",
+  "expectedPackageFiles": [
+    "/Users/lukaseriksson/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/lukaseriksson/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
+    "/Users/lukaseriksson/.nuget/packages/microsoft.netcore.app.host.osx-arm64/7.0.20/microsoft.netcore.app.host.osx-arm64.7.0.20.nupkg.sha512"
+  ],
   "logs": []
 }
