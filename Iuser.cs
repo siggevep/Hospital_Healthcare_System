@@ -17,7 +17,6 @@ enum Role
     Patient,
     Main_Admin,
     Local_Admin,
-
-
+    Personnel,
 
 }
