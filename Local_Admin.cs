@@ -33,11 +33,7 @@ public bool IsRole(Role role)
 
     }
 
-    public static void NewLocation(string? LocationName, string? HospitalName)
-    {
-        List<string?> locations = new List<string?>();
-        locations.Add(LocationName, HospitalName);
-    }
+   
     
 
 
