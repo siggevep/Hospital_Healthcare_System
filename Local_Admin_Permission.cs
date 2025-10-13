@@ -10,5 +10,11 @@ class Local_Admin_Permission
     locations.Add(LocationName, HospitalName);
   }
 
+  // Give admins the permission to create accounts for personnel.
+  public static void NewPersonnel(string? personnelemail, string? personnelpassword)
+  {
+    List<string?> personnels = new List<string?>();
+    personnels.Add(personnelemail, personnelpassword);
+  }
 
 }
