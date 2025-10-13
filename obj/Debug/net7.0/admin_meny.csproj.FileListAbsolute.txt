@@ -1,0 +1,15 @@
+C:\Users\sigge.voneggerspatr\admin_meny\bin\Debug\net7.0\admin_meny.exe
+C:\Users\sigge.voneggerspatr\admin_meny\bin\Debug\net7.0\admin_meny.deps.json
+C:\Users\sigge.voneggerspatr\admin_meny\bin\Debug\net7.0\admin_meny.runtimeconfig.json
+C:\Users\sigge.voneggerspatr\admin_meny\bin\Debug\net7.0\admin_meny.dll
+C:\Users\sigge.voneggerspatr\admin_meny\bin\Debug\net7.0\admin_meny.pdb
+C:\Users\sigge.voneggerspatr\admin_meny\obj\Debug\net7.0\admin_meny.csproj.AssemblyReference.cache
+C:\Users\sigge.voneggerspatr\admin_meny\obj\Debug\net7.0\admin_meny.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sigge.voneggerspatr\admin_meny\obj\Debug\net7.0\admin_meny.AssemblyInfoInputs.cache
+C:\Users\sigge.voneggerspatr\admin_meny\obj\Debug\net7.0\admin_meny.AssemblyInfo.cs
+C:\Users\sigge.voneggerspatr\admin_meny\obj\Debug\net7.0\admin_meny.csproj.CoreCompileInputs.cache
+C:\Users\sigge.voneggerspatr\admin_meny\obj\Debug\net7.0\admin_meny.dll
+C:\Users\sigge.voneggerspatr\admin_meny\obj\Debug\net7.0\refint\admin_meny.dll
+C:\Users\sigge.voneggerspatr\admin_meny\obj\Debug\net7.0\admin_meny.pdb
+C:\Users\sigge.voneggerspatr\admin_meny\obj\Debug\net7.0\admin_meny.genruntimeconfig.cache
+C:\Users\sigge.voneggerspatr\admin_meny\obj\Debug\net7.0\ref\admin_meny.dll
