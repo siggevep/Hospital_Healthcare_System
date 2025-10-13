@@ -27,7 +27,7 @@ static void Give_Admin_permision()
         if (user.TryLogin(input, input_2))
         {
             user.GetRole(Local_Admin);
-            File.WriteAllText("./Local_Admin.txt", user.username + "  " + user.password);
+            File.WriteAllText("./Local_Admin.txt", user.username + "  " + user.password); // Måste ändra till APPENDalltext plus måste fixa så att det står \n i slutet för annars skrivs alla namn och lösenord på en lång rad ,precis som denna raden
             break;
 
         }
@@ -36,7 +36,7 @@ static void Give_Admin_permision()
 
     Console.WriteLine("Write one of theese names to give them admin");
 
-    string input = Console.ReadLine()!; 
+    
 
 
 }
