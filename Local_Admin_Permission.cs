@@ -12,6 +12,12 @@ class Local_Admin_Permission
 
   }
 
+  // Give admins the permission to create accounts for personnel.
+  public static void NewPersonnel(string? personnelemail, string? personnelpassword)
+  {
+    List<string?> personnels = new List<string?>();
+    personnels.Add(personnelemail, personnelpassword);
+  }
 
   // För att visa Locations
   public static void ShowLocations()
