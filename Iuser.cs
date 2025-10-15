@@ -2,9 +2,12 @@
 
 interface IUser
 {
-    public bool TryLogin(string username, string password);
+    public bool TryLogin(string username, string password, string person_nummer);
 
     public bool IsRole(Role role);
+    
+    
+    
 
     public Role GetRole();
 

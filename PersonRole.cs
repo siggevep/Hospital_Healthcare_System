@@ -8,14 +8,14 @@ class Person_role
     public string Role;
 
 
- public Person_role(string username, string password)
+ /*public Person_role(string username, string password)
     {
         Username = username;
         Password = password;
 
 
     }
-
+*/
 
 
 
