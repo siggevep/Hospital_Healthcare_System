@@ -89,7 +89,13 @@ while (running)
 
             Console.WriteLine("Password:");
             string password = Console.ReadLine()!;
-            users.Add(new User(name, password));
+          
+
+
+            Console.WriteLine("Please enter Your SSN");
+            string Person_nummer = Console.ReadLine();
+
+              users.Add(new User(name, password, Person_nummer));
 
             //lägga till create
             // måste fixa så att din inloggning sparas 

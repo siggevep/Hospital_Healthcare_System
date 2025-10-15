@@ -1,14 +1,15 @@
+
 namespace App;
 
-class User : IUser
+class Patient: IUser
 {
 
     public string Username;
     string Password;
 
-    public string Person_nummer;
+    public string SSN;
 
-    public User(string username, string password)
+    public Patient(string username, string password)
     {
         Username = username;
         Password = password;

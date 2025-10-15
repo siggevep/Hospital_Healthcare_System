@@ -7,7 +7,7 @@ class Local_Admin : IUser
     public string Username;
     string Password;
 
-   
+    public string Person_nummer;
 
     public Local_Admin(string username, string password)
     {

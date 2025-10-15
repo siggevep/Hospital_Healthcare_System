@@ -5,6 +5,8 @@ class Personnel : IUser
     public string Username;
     string Password;
 
+    public string Person_nummer;
+
     public Personnel(string username, string password)
     {
         Username = username;
