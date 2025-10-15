@@ -20,3 +20,10 @@ enum Role
     Personnel,
 
 }
+enum RegistrationStatus
+{
+    // All registrasions default falue is pending
+    Pending,
+    accept,
+    Deny,
+}
