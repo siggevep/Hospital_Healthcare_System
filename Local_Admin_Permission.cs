@@ -1,18 +1,5 @@
 namespace App;
 
-[System.Flags]
-// Rättigheter som kan kombineras med bitflaggor.
-public enum Permission
-{
-  None                = 0,
-  ManagePermissions   = 1 << 0,
-  AddLocation         = 1 << 1,
-  RemoveLocation      = 1 << 2,
-  CreatePersonnel     = 1 << 3,
-  RemovePersonnel     = 1 << 4,
-  HandleRegistrations = 1 << 5,
-}
-
 class Local_Admin_Permission
 {
  
