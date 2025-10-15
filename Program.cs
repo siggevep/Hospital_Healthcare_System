@@ -21,7 +21,7 @@ static void Admin_meny()
         case "5" : Give_Admin_permission_To_Register_Accounts(); break;
         case "6" : Create_Accounts_For_Personell(); break;
         case "7" : View_access(); break;
-        
+
         
 
     }
@@ -49,5 +49,25 @@ static void Give_Admin_permission()
 
         }
 
+
 }
+
+
+
+
+
+    static void Give_Admin_specific_region()
+
+    {
+        Console.WriteLine(" Give an admin a specific region to access");
+        string input = Console.ReadLine();
+            
+
+
+    }
+
+
+}
+
+
 
