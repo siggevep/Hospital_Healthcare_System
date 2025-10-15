@@ -8,6 +8,24 @@ List<IUser> users = new List<IUser>();
 
 users.Add(new Local_Admin("Lukas", "Eriksson"));
 
+// Seedar permissions för Lukas om saknas (måste ha ManagePermissions för att kunna ändra andra).
+if (!SaveData.TryGetPermissions("Lukas", out var _p, out var _r))
+{
+    var dict = SaveData.LoadPermissions();
+    dict["Lukas"] = (Permission.ManagePermissions, "Skane"); // region valfri/tom string
+    SaveData.SavePermissions(dict);
+}
+
+// Lyssna på events (loggning eller hooks) – andra delar kan reagera “baserat på event”.
+Local_Admin_Permission.PermissionsChanged += (u, perms) =>
+{
+    Console.WriteLine($"[EVENT] Permissions uppdaterade för {u}: {perms}");
+};
+Local_Admin_Permission.RegionChanged += (u, region) =>
+{
+    Console.WriteLine($"[EVENT] Region uppdaterad för {u}: {region}");
+};
+
 
 // skapar första menyn ifall active_user == false. 
 while (running)
@@ -41,9 +59,23 @@ while (running)
 
 
             }
-            if(active_user!.IsRole(Role.Local_Admin))
+            // Säker hantering: kontrollera null innan rollkoll.
+            if (active_user != null)
             {
-                Console.WriteLine("hello Main admin");
+                if (active_user.IsRole(Role.Local_Admin))
+                {
+                    Console.WriteLine("hello Local admin");
+                }
+                // Lägger bara till dettat temp för att testa User rollen. Pretty basic
+                if(active_user.IsRole(Role.User))
+                {
+                    Console.WriteLine("Hey King");
+                }
+                // här kan ni lägga Local Admin-logik/meny senare
+            }
+            else
+            {
+                Console.WriteLine("Fel användarnamn eller lösenord.");
             }
             //lägga till log in 
             // måste fixa så att du kollar om ditt konto fins
@@ -61,6 +93,14 @@ while (running)
 
             //lägga till create
             // måste fixa så att din inloggning sparas 
+
+            // Lägg till permissions-post med None + tom region (annars blir användaren 'okänd' för permissions).
+            var dict = SaveData.LoadPermissions();
+            if (!dict.ContainsKey(name))
+            {
+                dict[name] = (Permission.None, "");
+                SaveData.SavePermissions(dict);
+            }
         }
 
         // ifall quit väljs
@@ -77,5 +117,3 @@ while (running)
 
     }
 }
-
-
