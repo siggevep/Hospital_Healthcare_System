@@ -1,13 +1,14 @@
 using System.Security.Cryptography.X509Certificates;
 
 namespace App;
+
 class Local_Admin : IUser
 {
 
     public string Username;
     string Password;
 
-   
+
 
     public Local_Admin(string username, string password)
     {
@@ -15,17 +16,17 @@ class Local_Admin : IUser
         Password = password;
 
     }
-    
+
     public bool TryLogin(string username, string password)
     {
         return username == Username && password == Password;
 
     }
-     
-public bool IsRole(Role role)
+
+    public bool IsRole(Role role)
     {
         return Role.Local_Admin == role;
-        
+
     }
     public Role GetRole()
     {
@@ -33,8 +34,7 @@ public bool IsRole(Role role)
 
     }
 
-   
-    
-
-
 }
+
+
+
