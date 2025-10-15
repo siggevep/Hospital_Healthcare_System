@@ -10,7 +10,7 @@ interface IUser
 
 }
 
-enum Role
+public enum Role
 {
     None,
     User,
@@ -20,10 +20,10 @@ enum Role
     Personnel,
 
 }
-enum RegistrationStatus
+public enum RegistrationStatus
 {
     // All registrasions default falue is pending
     Pending,
-    accept,
+    Accept,
     Deny,
 }

@@ -25,5 +25,41 @@ public class Main_Admin : IUser
   {
     return Role.Main_Admin;
   }
-  
+
+}
+// Creat a registration class in order to send a patient's account request
+
+public class Registrasion
+{
+
+  public string? PatientPersonalNumber;
+  public string? PatientPassword;
+  public RegistrationStatus Registration_Status;
+
+  public Registrasion(string? patientperssonalnumber, string? patientpassword, RegistrationStatus registration_status)
+  {
+    PatientPersonalNumber = patientperssonalnumber;
+    PatientPassword = patientpassword;
+    Registration_Status = registration_status;
+
+  }
+
+  public void Pending()
+  {
+    Registration_Status = RegistrationStatus.Pending;
+
+
+  }
+  public void accept()
+  {
+    Registration_Status = RegistrationStatus.Accept;
+
+
+  }
+  public void Deny()
+  {
+    Registration_Status = RegistrationStatus.Deny;
+
+
+  }
 }
