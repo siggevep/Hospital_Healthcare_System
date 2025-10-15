@@ -2,11 +2,11 @@ namespace App;
 
 class Journal
 {
-  string? PatientName;
-  string? Date;
-  string? Titel;
-  string? Description;
-  string? Attachment;
+  public string? PatientName;
+  public string? Date;
+  public string? Titel;
+  public string? Description;
+  public string? Attachment;
 
   public Journal(string? patientname, string? date, string? titel, string? description, string? attachment)
   {
@@ -18,24 +18,4 @@ class Journal
 
   }
 
-  public string? GetPatientName()
-  {
-    return PatientName;
-  }
-  public string? GetDate()
-  {
-    return Date;
-  }
-  public string? GetTitel()
-  {
-    return Titel;
-  }
-  public string? GetDescription()
-  {
-    return Description;
-  }
-  public string? GetAttatchment()
-  {
-    return Attachment;
-  }
 }

@@ -1,5 +1,5 @@
-namespace App
-{
+namespace App;
+
    
     class Location
     {
@@ -149,4 +149,3 @@ namespace App
             return false;
         }
     }
-}
