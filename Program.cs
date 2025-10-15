@@ -1,4 +1,5 @@
 using System.Reflection.Metadata;
+using System.Runtime.Intrinsics.Arm;
 using App;
 
 IUser? active_user = null;
@@ -27,6 +28,29 @@ Local_Admin_Permission.RegionChanged += (u, region) =>
 };
 
 
+
+while (running)
+{ // Skapa Main Admin meny så att de kan ha tillgång till allt i systemet
+    if (active_user == null)
+    {
+        System.Console.WriteLine("Log in firsta to open the system");
+        System.Console.WriteLine("Username: ");
+        string? username = Console.ReadLine();
+
+        System.Console.WriteLine("Password: ");
+        string? password = Console.ReadLine();
+
+        
+    }
+  else
+    {
+    // Här ska Main Admin meny läggas
+    
+  }
+       
+
+
+}
 // skapar första menyn ifall active_user == false. 
 while (running)
 {
@@ -67,7 +91,7 @@ while (running)
                     Console.WriteLine("hello Local admin");
                 }
                 // Lägger bara till dettat temp för att testa User rollen. Pretty basic
-                if(active_user.IsRole(Role.User))
+                if (active_user.IsRole(Role.User))
                 {
                     Console.WriteLine("Hey King");
                 }
@@ -112,7 +136,7 @@ while (running)
     }
     else
     {
-        
+
 
 
     }
