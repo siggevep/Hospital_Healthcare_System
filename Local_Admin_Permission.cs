@@ -1,6 +1,5 @@
-namespace App
-{
-   
+namespace App;
+
     class Location
     {
         public string Name;
@@ -149,4 +148,3 @@ namespace App
             return false;
         }
     }
-}
