@@ -130,7 +130,7 @@ namespace App
            
         }
 
-        // Deny registration
+        // Deny registration.
         public static bool DenyNewPatient(string userEmail)
         {
             int i = 0;
