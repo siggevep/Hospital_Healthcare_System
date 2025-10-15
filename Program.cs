@@ -59,24 +59,6 @@ List<IUser> users = new List<IUser>();
 
 
 
-// Seedar permissions för Lukas om saknas (måste ha ManagePermissions för att kunna ändra andra).
-if (!SaveData.TryGetPermissions("Lukas", out var _p, out var _r))
-{
-    var dict = SaveData.LoadPermissions();
-    dict["Lukas"] = (Permission.ManagePermissions, "Skane"); // region valfri/tom string
-    SaveData.SavePermissions(dict);
-}
-
-// Lyssna på events (loggning eller hooks) – andra delar kan reagera “baserat på event”.
-Local_Admin_Permission.PermissionsChanged += (u, perms) =>
-{
-    Console.WriteLine($"[EVENT] Permissions uppdaterade för {u}: {perms}");
-};
-Local_Admin_Permission.RegionChanged += (u, region) =>
-{
-    Console.WriteLine($"[EVENT] Region uppdaterad för {u}: {region}");
-};
-
 
 // skapar första menyn ifall active_user == false. 
 while (running)
@@ -113,7 +95,6 @@ while (running)
 
 
             }
-
             // Säker hantering: kontrollera null innan rollkoll.
             if (active_user != null)
             {
@@ -139,6 +120,7 @@ while (running)
             else
             {
                 Console.WriteLine("Fel användarnamn, lösenord eller personnummer.");
+
             }
             //lägga till log in 
             // måste fixa så att du kollar om ditt konto finns
@@ -162,14 +144,6 @@ while (running)
 
             //lägga till create
             // måste fixa så att din inloggning sparas 
-
-            // Lägg till permissions-post med None + tom region (annars blir användaren 'okänd' för permissions).
-            var dict = SaveData.LoadPermissions();
-            if (!dict.ContainsKey(name))
-            {
-                dict[name] = (Permission.None, "");
-                SaveData.SavePermissions(dict);
-            }
         }
 
         // ifall quit väljs
@@ -186,3 +160,4 @@ while (running)
 
     }
 }
+
